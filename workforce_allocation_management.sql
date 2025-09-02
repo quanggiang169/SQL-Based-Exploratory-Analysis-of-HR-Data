@@ -35,18 +35,18 @@ FROM (
 
 /*
 Data Analysis & Insights
-?? Biggest Issue:
+# Biggest Issue:
 - The employee-to-manager ratio is too high, which is impractical in reality.
 - A single manager cannot effectively supervise, support, and evaluate thousands of employees.
-?? Possible Causes:
-Data Inaccuracy – The data in the department_manager table might be incomplete or incorrect.
+# Possible Causes:
+Data Inaccuracy â€“ The data in the department_manager table might be incomplete or incorrect.
 - Verify by checking the historical number of managers in each department.
 - The data might only record the highest-level manager while omitting mid-level managers.
-Management Structure Issues – If the data is accurate, the company might be operating under an extremely decentralized management model with very few managers, leading to:
+Management Structure Issues â€“ If the data is accurate, the company might be operating under an extremely decentralized management model with very few managers, leading to:
 - Lack of supervision and employee support.
 - Employees feeling unguided and demotivated.
 - Decline in work quality due to insufficient managerial feedback.
-Unrecorded Managers – The system might not register mid-level managers, only recognizing a single top-level manager per department.
+Unrecorded Managers â€“ The system might not register mid-level managers, only recognizing a single top-level manager per department.
 */
 
 -- Total number of managers who have held a managerial position in each department (both past & present)
@@ -69,11 +69,11 @@ ORDER BY current_managers DESC;
 
 /* 
 Proposed Solutions
-?? If this data reflects reality, the company should improve its management model by:
+# If this data reflects reality, the company should improve its management model by:
 
-? Adding more mid-level managers – To supervise employees more effectively.
-? Implementing multi-level management delegation – Instead of having only one senior manager, introduce team leaders and department heads to distribute the workload.
-? Evaluating management performance – If a single manager is truly overseeing more than 1,000 employees, their efficiency may be compromised.
+- Adding more mid-level managers â€“ To supervise employees more effectively.
+- Implementing multi-level management delegation â€“ Instead of having only one senior manager, introduce team leaders and department heads to distribute the workload.
+- Evaluating management performance â€“ If a single manager is truly overseeing more than 1,000 employees, their efficiency may be compromised.
 */
 
 -------------------------------------------
@@ -136,9 +136,10 @@ The data shows a significant disparity in turnover rates across departments, wit
 Notably, departments with high turnover rates tend to have long-tenured managers (~12-14 years), particularly Finance (14 years). This may indicate that:
 - Managerial stability does not guarantee employee retention. Departments with long-serving leaders may face challenges in innovation or career advancement opportunities, leading to higher employee turnover.
 - Corporate culture or employee development policies might lack flexibility, especially in departments with high turnover rates.
-On the other hand, Customer Service, which has the lowest turnover rate (25.93%), also has the shortest managerial tenure (7 years). This suggests that frequent management changes may not negatively impact employee retention—in fact, they might even contribute to better retention.
+On the other hand, Customer Service, which has the lowest turnover rate (25.93%), also has the shortest managerial tenure (7 years). This suggests that frequent management changes may not negatively impact employee retentionâ€”in fact, they might even contribute to better retention.
 */
 /*
 Conclusion:
 Overall, the data reflects a generally stable work environment, with employees averaging 13 years of tenure. However, workforce fluctuations remain a concern. Some departments could benefit from managerial rotation policies, while others may need to improve workplace culture or employee benefits to reduce turnover.
+
 */
